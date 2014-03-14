@@ -138,16 +138,20 @@
 				$pages: $pager.find(".pager-pages"),
 				$position: $pager.find(".pager-position"),
 				$select: $pager.find(".pager-select"),
-				$items: $pager.find("a")
+				$items: $pager.find("a"),
+				index: -1
 			});
 
 			data.total = data.$items.length - 1;
+			var index = data.$items.index(data.$items.filter(".active"));
 
 			data.$items.eq(0).addClass("first")
 					   .end().eq(data.total).addClass("last");
 
-			data.$items.filter(".first").after('<span class="ellipsis first">&hellip;</span>');
-			data.$items.filter(".last").before('<span class="ellipsis last">&hellip;</span>');
+			data.$items.filter(".first")
+					   .after('<span class="ellipsis first">&hellip;</span>');
+			data.$items.filter(".last")
+					   .before('<span class="ellipsis last">&hellip;</span>');
 			data.$ellipsis = data.$pages.find(".ellipsis");
 
 			_buildMobilePages(data);
@@ -168,7 +172,7 @@
 				_onRespond.apply(data.$pager);
 			}
 
-			_updatePage(data, 0);
+			_updatePage(data, index);
 		}
 	}
 
@@ -205,9 +209,11 @@
 		if (data.ajax) {
 			e.preventDefault();
 			e.stopPropagation();
-		}
 
-		_updatePage(data, index);
+			_updatePage(data, index);
+		} else {
+			window.location.href = $target.attr("href");
+		}
 	}
 
 	/**
@@ -302,10 +308,10 @@
 
 			// elipsis
 			data.$ellipsis.removeClass("hide");
-			if (index <= data.visible) {
+			if (index <= data.visible + 1) {
 				data.$ellipsis.filter(".first").addClass("hide");
 			}
-			if (index >= data.total - data.visible) {
+			if (index >= data.total - data.visible - 1) {
 				data.$ellipsis.filter(".last").addClass("hide");
 			}
 
