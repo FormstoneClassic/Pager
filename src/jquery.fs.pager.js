@@ -17,7 +17,7 @@
 	 * @param visible [int] <2> "Visible pages before and after current page"
 	 */
 	var options = {
-		ajax: true,
+		ajax: false,
 		labels: {
 			count: "of",
 			next: "Next",
@@ -209,11 +209,11 @@
 		if (data.ajax) {
 			e.preventDefault();
 			e.stopPropagation();
-
-			_updatePage(data, index);
 		} else {
 			window.location.href = $target.attr("href");
 		}
+
+		_updatePage(data, index);
 	}
 
 	/**
