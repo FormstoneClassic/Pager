@@ -1,0 +1,53 @@
+	.pager {
+		.pager-pages {
+			text-align: center;
+
+			a,
+			.ellipsis.hide {
+				display: none;
+				margin: 0 5px;
+			}
+
+			a.active,
+			a.first,
+			a.last,
+			a.visible,
+			.ellipsis { display: inline-block; }
+		}
+
+		.pager-control {
+			display: block;
+
+			&.previous {
+				float: left;
+			}
+
+			&.next {
+				float: right;
+			}
+		}
+
+
+		.pager-position,
+		.pager-select {
+			display: none;
+		}
+
+		&.mobile {
+			.pager-pages {
+				display: none;
+			}
+
+			.pager-position {
+				display: block;
+				text-align: center;
+			}
+
+			.pager-select {
+				display: block;
+				opacity: 0;
+				position: absolute;
+				z-index: -1;
+			}
+		}
+	}
