@@ -3,8 +3,8 @@
 
 A jQuery plugin for simple pagination. Part of the formstone library. 
 
-- [Demo](http://formstone.it/components/Pager/demo/index.html) 
-- [Documentation](http://formstone.it/pager/) 
+- [Demo](http://classic.formstone.it/components/Pager/demo/index.html) 
+- [Documentation](http://classic.formstone.it/pager/) 
 
 #### Bower Support 
-`bower install Pager`
+`bower install Pager` 

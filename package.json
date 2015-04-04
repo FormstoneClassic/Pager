@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Formstone/Pager"
+    "url": "https://github.com/FormstoneClassic/Pager"
   },
-  "homepage": "http://formstone.it/pager/",
-  "demo": "http://formstone.it/components/Pager/demo/index.html",
+  "homepage": "http://classic.formstone.it/pager/",
+  "demo": "http://classic.formstone.it/components/Pager/demo/index.html",
   "license": "MIT",
   "author": {
     "name": "Ben Plum",

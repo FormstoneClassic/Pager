@@ -8,7 +8,7 @@
     "url": "http://www.benplum.com"
   },
   "license": "MIT",
-  "homepage": "http://formstone.it/pager/",
+  "homepage": "http://classic.formstone.it/pager/",
   "main": [
     "jquery.fs.pager.js",
     "jquery.fs.pager.css"

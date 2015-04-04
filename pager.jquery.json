@@ -24,9 +24,9 @@
     "jquery",
     "formstone"
   ],
-  "docs": "http://formstone.it/pager/",
-  "demo": "http://formstone.it/pager/",
-  "download": "https://github.com/Formstone/Pager",
-  "bugs": "https://github.com/Formstone/Pager/issues",
-  "homepage": "http://formstone.it/pager/"
+  "docs": "http://classic.formstone.it/pager/",
+  "demo": "http://classic.formstone.it/pager/",
+  "download": "https://github.com/FormstoneClassic/Pager",
+  "bugs": "https://github.com/FormstoneClassic/Pager/issues",
+  "homepage": "http://classic.formstone.it/pager/"
 }

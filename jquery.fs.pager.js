@@ -1,9 +1,9 @@
 /* 
- * Pager v1.1.0 - 2014-11-25 
+ * Pager v1.1.0 - 2015-04-04 
  * A jQuery plugin for simple pagination. Part of the formstone library. 
- * http://formstone.it/pager/ 
+ * http://classic.formstone.it/pager/ 
  * 
- * Copyright 2014 Ben Plum; MIT Licensed 
+ * Copyright 2015 Ben Plum; MIT Licensed 
  */
 
 ;(function ($, window) {
